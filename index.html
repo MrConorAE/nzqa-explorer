@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NZQA Explorer</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+        <!-- Styles -->
+        <link href="/style.css" rel="stylesheet" type="text/css">
+        <!-- Script -->
+        <script src="/script.js"></script>
+    </head>
+
+    <body>
+        <h1>NZQA Explorer</h1>
+        <table class="table">
+            <tr>
+                <td>
+                    Enter a standard number:
+                </td>
+                <td>
+                    Standard no.: <input type="text" id="standard" name="standard" placeholder="91262" minlength="5" maxlength="5" width="5" class="">
+                    <button onclick="goToStandard()" class="btn btn-primary btn-sm">Go <i class="ti ti-arrow-right"></i></button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Don't know the standard number? Pick a field and level:
+                </td>
+                <td>
+                    Subject:
+                    <select name="subject" id="subject" class="custom-select">
+                        <option value="accounting">Accounting</option>
+                        <option value="adult education">Adult Education</option>
+                        <option value="agricultural and horticultural science">Ag. and Hort. Science</option>
+                        <option value="business studies">Agribusiness</option>
+                        <option value="art history">Art History</option>
+                        <option value="biology">Biology</option>
+                        <option value="business and management">Business and Management</option>
+                        <option value="business studies">Business Studies</option>
+                        <option value="chemistry">Chemistry</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="classical studies">Classical Studies</option>
+                        <option value="cook islands maori">Cook Islands Maori</option>
+                        <option value="digital technologies">Computing</option>
+                        <option value="core generics">Core Skills</option>
+                        <option value="dance">Dance</option>
+                        <option value="graphics">Graphics/DVC</option>
+                        <option value="digital technologies">Digital Technologies</option>
+                        <option value="drama">Drama</option>
+                        <option value="driver licence">Driver License (Class 1)</option>
+                        <option value="early childhood education">Early Childhood Education</option>
+                        <option value="earth and space science">Earth and Space Science</option>
+                        <option value="economics">Economics</option>
+                        <option value="education for sustainability">Education for Sustainability</option>
+                        <option value="english">English</option>
+                        <option value="eap">English for Academic Purposes</option>
+                        <option value="english language">English Language (ESOL)</option>
+                        <option value="maori performing arts">Field Maori</option>
+                        <option value="french">French</option>
+                        <option value="geography">Geography</option>
+                        <option value="german">German</option>
+                        <option value="hangarau">Hangarau</option>
+                        <option value="hauora">Hauora</option>
+                        <option value="health">Health</option>
+                        <option value="history">History</option>
+                        <option value="home economics">Home Economics</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="korean">Korean</option>
+                        <option value="latin">Latin</option>
+                        <option value="legal studies">Legal Studies</option>
+                        <option value="lea faka tonga">Lea Faka Tonga</option>
+                        <option value="mathematics">Mathematics and Statistics</option>
+                        <option value="media studies">Media Studies</option>
+                        <option value="maori performing arts">Maori Performing Arts</option>
+                        <option value="music">Music</option>
+                        <option value="nzsl">NZSL</option>
+                        <option value="pacific studies">Pacific Studies</option>
+                        <option value="pangarau">Pangarau</option>
+                        <option value="physical education">Physical Education</option>
+                        <option value="physics">Physics</option>
+                        <option value="psychology">Psychology</option>
+                        <option value="putaiao">Putaiao</option>
+                        <option value="religious studies">Religious Studies</option>
+                        <option value="samoan">Samoan</option>
+                        <option value="science">Generic Science</option>
+                        <option value="social studies">Social Studies</option>
+                        <option value="sociology">Sociology</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="supported learning">Supported Learning</option>
+                        <option value="te reo maori">Te Reo Maori</option>
+                        <option value="te reo rangitira">Te Reo Rangitira</option>
+                        <option value="technology">Generic Technology</option>
+                        <option value="tikanga a iwi">Tikanga a Iwi</option>
+                        <option value="vagahau niue">Vagahau Niue</option>
+                        <option value="visual arts">Visual Arts</option>
+                    </select>
+                    Level:
+                    <input type="number" id="level" name="level" min="1" max="3" step="1" width="1" value="1">
+                    <button onclick="goToSubject()" class="btn btn-primary btn-sm">Go <i class="ti ti-arrow-right"></i></button>
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>
