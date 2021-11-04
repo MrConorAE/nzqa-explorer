@@ -20,6 +20,9 @@
 
     <body>
         <h1>NZQA Explorer</h1>
+        Welcome to NZQA Explorer! This site is designed to make it easier to find information for standards or subjects in the NCEA system.
+        <br>
+        To start, just enter a standard number and press "Go to Standard", or choose a subject and level and press "Go to Subject".
         <table class="table">
             <tr>
                 <td>
@@ -27,7 +30,7 @@
                 </td>
                 <td>
                     Standard no.: <input type="text" id="standard" name="standard" placeholder="91262" minlength="5" maxlength="5" width="5" class="">
-                    <button onclick="goToStandard()" class="btn btn-primary btn-sm">Go <i class="ti ti-arrow-right"></i></button>
+                    <button onclick="goToStandard()" class="btn btn-primary btn-sm">Go to Standard <i class="ti ti-arrow-right"></i></button>
                 </td>
             </tr>
             <tr>
@@ -104,7 +107,7 @@
                     </select>
                     Level:
                     <input type="number" id="level" name="level" min="1" max="3" step="1" width="1" value="1">
-                    <button onclick="goToSubject()" class="btn btn-primary btn-sm">Go <i class="ti ti-arrow-right"></i></button>
+                    <button onclick="goToSubject()" class="btn btn-primary btn-sm">Go to Subject <i class="ti ti-arrow-right"></i></button>
                 </td>
             </tr>
         </table>
